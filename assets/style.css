@@ -19,7 +19,7 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     font-family: 'Squada One', cursive;
-    font-size: 130%;
+    font-size: 140%;
     transition: font-size 1200ms linear;
   }
 
@@ -47,6 +47,11 @@ h3 {
 .work-01 {
     width: 100%;
 }
+
+.work-01:hover {
+    -webkit-box-shadow: 0px 0px 12px 5px #3a4267; 
+box-shadow: 0px 0px 12px 5px #3a4267;
+  }
 
 .lead-left {
     display:flex;
@@ -93,7 +98,7 @@ background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
     background-color: #3a4267;
     width: 200px;
     border-radius: 10px 10px 0px 0px;
-    margin-top: -48px;
+    margin-top: -46px;
     margin-bottom: 5px;
 }
 
@@ -157,7 +162,7 @@ background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
 }
 
 .work-head {
-    background-color: #6a5a1e;
+    background-color: rgb(72, 71, 71);
     width: 250px;
     border-radius: 7px;
     padding-left: 20px;
@@ -183,6 +188,10 @@ background: -webkit-linear-gradient(top, #3A4267 0%, #191D2D 100%);
 background: linear-gradient(to bottom, #3A4267 0%, #191D2D 100%);
 }
 
+/*.contact-res {
+    margin-left: 40px;
+}*/
+
 ul {
     display: flex;
     list-style: none;
@@ -191,9 +200,14 @@ ul {
     justify-content: center;
     font-family: 'Squada One', cursive;
     color: white;
-    margin-right: 80px;
+    
     font-size: 110%;
     line-height: 150%;
+    margin-left: -40px;
+}
+
+.con:hover {
+    color: aqua;
 }
 
 a, a:hover, a:focus, a:active {
