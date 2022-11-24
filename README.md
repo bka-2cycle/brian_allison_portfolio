@@ -20,6 +20,10 @@ The Footer section provides contact information and links to my email and profil
 
 ![image of the Footer/contact section] (https://raw.githubusercontent.com/bka-2cycle/brian_allison_portfolio/main/assets/images/Screen-Shot-03.png)
 
+## Link to Site
+
+https://bka-2cycle.github.io/brian_allison_portfolio/
+
 ## Credits
 
 Tutorials that provided useful information.
