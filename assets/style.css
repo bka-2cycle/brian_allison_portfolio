@@ -1,110 +1,118 @@
+/* universal styles */
+:root {
+    --blue: #3a4267;
+    --grey: rgb(72, 71, 71);
+    --type: #cecfd1;
+    --bkrd: #F9D9A3;
+}
+
 body {
     margin-left: 40px;
     margin-right: 40px;
 }
 
-
+/* nav bar and links */
 nav {
     display: flex;
-    background-color: #3a4267;
+    background-color: var(--blue);
     justify-content: flex-end;
     height: 50px;
     min-width: 360px;
-    /*width: 100%;*/
-  }
+}
 
 nav a {
-    /*display: flex;*/
-    color: #cecfd1;
+    color: var(--type);
     padding: 14px 20px;
     text-decoration: none;
     font-family: 'Squada One', cursive;
     font-size: 140%;
     transition: font-size 1200ms linear;
-  }
+}
 
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* lead images and hr rule */
 aside {
     display: flex;
     flex-direction: row;
 }
 
-h2 {
-    font-family: 'Squada One', cursive;
-    color: #cecfd1;
-    padding-left: 20px;
+.lead-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: -50px;
 }
 
+.lead-right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+}
+
+.rounded {
+    border-top: 8px solid var(--blue);
+    border-radius: 5px;
+    margin-top: -0px;
+    min-width: 360px;
+}
+
+/* text styles */
 p {
     font-family: 'K2D', sans-serif;
     font-size: smaller;
 }
 
-h3 {
-    font-family: 'K2D', sans-serif;
-    font-size: smaller;
+h2 {
+    font-family: 'Squada One', cursive;
+    color: var(--type);
+    padding-left: 20px;
 }
 
+/* project images */
 .work-01 {
     width: 100%;
 }
 
 .work-01:hover {
-    -webkit-box-shadow: 0px 0px 12px 5px #3a4267; 
-box-shadow: 0px 0px 12px 5px #3a4267;
-  }
+    -webkit-box-shadow: 0px 0px 12px 5px var(--blue);
+    box-shadow: 0px 0px 12px 5px var(--blue);
+}
 
-.lead-left {
-    display:flex;
-    flex-direction: column;
-    width: 40%;
-    margin-top: -50px;
-  }
-
-  .lead-right {
-    display:flex;
-    flex-direction: column;
-    width: 60%;
-    align-self: center;
-    
-  }
-
-  .rounded {
-    border-top: 8px solid #3a4267;
-    border-radius: 5px;
-    margin-top: -0px;
-    min-width: 360px;
-  }
-
-
-  .parent {
-    display:flex;
+/* about me section */
+.parent {
+    display: flex;
     flex-direction: column;
     min-width: 320px;
-    border-style:solid;
-    border-color: #3a4267;
+    border-style: solid;
+    border-color: var(--blue);
     margin-top: 35px;
     padding: 20px;
     border-radius: 7px;
+    background: var(--bkrd);
+    background: -moz-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
+    background: -webkit-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
+    background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
 }
-
-.parent {
-    background: #F9D9A3;
-background: -moz-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
-background: -webkit-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
-background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
-}
-
+/* also used in footer */
 .module-head {
-    background-color: #3a4267;
+    background-color: var(--blue);
     width: 200px;
     border-radius: 10px 10px 0px 0px;
     margin-top: -46px;
     margin-bottom: 5px;
 }
 
-
+/* work section */
 .module-head-02 {
-    background-color: #3a4267;
+    background-color: var(--blue);
     width: 200px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: -37px;
@@ -112,29 +120,22 @@ background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
 }
 
 .parent-02 {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     min-width: 320px;
-    border-style:solid;
-    border-color: #3a4267;
+    border-style: solid;
+    border-color: var(--blue);
     margin-top: 35px;
     padding: 20px;
     border-radius: 7px;
-}
-
-.parent-02 {
-    background: #F9D9A3;
-background: -moz-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
-background: -webkit-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
-background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
+    background: var(--bkrd);
+    background: -moz-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
+    background: -webkit-linear-gradient(top, #F9D9A3 0%, #CEAB6A 100%);
+    background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
 }
 
 .work-box-01 {
-    /*flex: 1 0 60%;
-    min-width: 320px;*/
-    /*border-style:groove;*/
-    /*border-color: rgb(210, 211, 214);*/
     margin-top: 35px;
     padding: 20px;
     border-radius: 7px;
@@ -143,26 +144,24 @@ background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
+/* sub-work section, 2nd column on desktop media */
 .parent-03 {
     flex-direction: row;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     flex: 1 0 30%;
 }
 
 .work-box-02 {
-    /*border-style:groove;*/
-    /*border-color: rgb(210, 211, 214);*/
     margin-top: 35px;
     padding: 20px;
     border-radius: 7px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
+/* applied in work and sub-work section */
 .work-head {
-    background-color: rgb(72, 71, 71);
+    background-color: var(--grey);
     width: 250px;
     border-radius: 7px;
     padding-left: 20px;
@@ -172,25 +171,20 @@ background: linear-gradient(to bottom, #F9D9A3 0%, #CEAB6A 100%);
     color: aliceblue;
 }
 
-
-.parent-04 {
-    display:flex;
+/* footer with contact info and links - ul/li */
+footer {
+    display: flex;
     flex-direction: column;
     min-width: 320px;
-    border-style:solid;
-    border-color: #3a4267;
+    border-style: solid;
+    border-color: var(--blue);
     margin-top: 35px;
     padding: 20px;
-    /*width: 100%;*/
-    background: #3A4267;
-background: -moz-linear-gradient(top, #3A4267 0%, #191D2D 100%);
-background: -webkit-linear-gradient(top, #3A4267 0%, #191D2D 100%);
-background: linear-gradient(to bottom, #3A4267 0%, #191D2D 100%);
+    background: var(--blue);
+    background: -moz-linear-gradient(top, #3A4267 0%, #191D2D 100%);
+    background: -webkit-linear-gradient(top, #3A4267 0%, #191D2D 100%);
+    background: linear-gradient(to bottom, #3A4267 0%, #191D2D 100%);
 }
-
-/*.contact-res {
-    margin-left: 40px;
-}*/
 
 ul {
     display: flex;
@@ -200,73 +194,50 @@ ul {
     justify-content: center;
     font-family: 'Squada One', cursive;
     color: white;
-    
     font-size: 110%;
     line-height: 150%;
     margin-left: -40px;
 }
-
+/* contact links in footer */
 .con:hover {
     color: aqua;
 }
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-
+/* media queries */
 @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
+
     .parent-02 {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .work-box-01 {
         margin-right: 0px;
     }
-     
+
     nav a {
-        color: #cecfd1;
+        color: var(--type);
         padding: 14px 10px;
         text-decoration: none;
         font-family: 'Squada One', cursive;
         font-size: 100%;
-      }
-  }
+    }
+}
 
-  @media screen and (max-width: 480px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
+@media screen and (max-width: 480px) {
+
     .parent-02 {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .work-box-01 {
         margin-right: 0px;
     }
-    
+
     nav a {
-        color: #cecfd1;
+        color: var(--type);
         padding: 14px 10px;
         text-decoration: none;
         font-family: 'Squada One', cursive;
         font-size: 70%;
-      }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-  
+    }
+}
